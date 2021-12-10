@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://entry_scene.gd" type="Script" id=1]
+
+[node name="entry_scene" type="Control"]
+anchor_right = 0.064
+anchor_bottom = 0.033
+margin_right = 0.463997
+margin_bottom = 0.200001
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "Enter VR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
